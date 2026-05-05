@@ -1,0 +1,152 @@
+export type Product = {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice?: number;
+  rating: number;
+  reviewCount: number;
+  category: string;
+  image: string;
+  badge?: "sale" | "new" | "hot";
+  description: string;
+};
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Wireless Noise-Cancelling Headphones",
+    price: 79.99,
+    originalPrice: 129.99,
+    rating: 4.8,
+    reviewCount: 2341,
+    category: "Electronics",
+    image: "/images/wireless-noise-cancelling-headphones.jpg",
+    badge: "sale",
+    description: "Premium sound with 30-hour battery life and active noise cancellation.",
+  },
+  {
+    id: 2,
+    name: "Minimalist Leather Watch",
+    price: 149.99,
+    rating: 4.7,
+    reviewCount: 876,
+    category: "Accessories",
+    image: "/images/minimalist-leather-watch.jpg",
+    badge: "new",
+    description: "Slim profile with genuine leather strap and sapphire crystal glass.",
+  },
+  {
+    id: 3,
+    name: "Running Sneakers Pro",
+    price: 89.99,
+    originalPrice: 119.99,
+    rating: 4.6,
+    reviewCount: 1543,
+    category: "Footwear",
+    image: "/images/running-sneakers-pro.jpg",
+    badge: "sale",
+    description: "Lightweight mesh upper with responsive foam cushioning.",
+  },
+  {
+    id: 4,
+    name: "Portable Bluetooth Speaker",
+    price: 59.99,
+    rating: 4.5,
+    reviewCount: 987,
+    category: "Electronics",
+    image: "/images/portable-bluetooth-speaker.jpg",
+    badge: "hot",
+    description: "360° surround sound with waterproof design and 12-hour playtime.",
+  },
+  {
+    id: 5,
+    name: "Organic Cotton Hoodie",
+    price: 64.99,
+    originalPrice: 84.99,
+    rating: 4.9,
+    reviewCount: 432,
+    category: "Clothing",
+    image: "/images/organic-cotton-hoodie.jpg",
+    badge: "sale",
+    description: "Sustainably sourced, ultra-soft fleece lining for all-day comfort.",
+  },
+  {
+    id: 6,
+    name: "Smart Fitness Tracker",
+    price: 99.99,
+    rating: 4.4,
+    reviewCount: 2109,
+    category: "Electronics",
+    image: "/images/smart-fitness-tracker-wristband.jpg",
+    badge: "new",
+    description: "Track heart rate, sleep, and workouts with a 7-day battery.",
+  },
+  {
+    id: 7,
+    name: "Leather Crossbody Bag",
+    price: 119.99,
+    rating: 4.7,
+    reviewCount: 654,
+    category: "Accessories",
+    image: "/images/leather-crossbody-bag.jpg",
+    description: "Full-grain leather with adjustable strap and multiple compartments.",
+  },
+  {
+    id: 8,
+    name: "Yoga Mat Premium",
+    price: 44.99,
+    originalPrice: 59.99,
+    rating: 4.8,
+    reviewCount: 1876,
+    category: "Sports",
+    image: "/images/premium-yoga-mat.jpg",
+    badge: "sale",
+    description: "Non-slip surface with alignment lines and carrying strap included.",
+  },
+  {
+    id: 9,
+    name: "Stainless Steel Water Bottle",
+    price: 29.99,
+    rating: 4.6,
+    reviewCount: 3210,
+    category: "Sports",
+    image: "/images/stainless-steel-water-bottle.jpg",
+    badge: "hot",
+    description: "Double-wall insulation keeps drinks cold 24h or hot 12h.",
+  },
+  {
+    id: 10,
+    name: "Slim Fit Chino Pants",
+    price: 54.99,
+    originalPrice: 74.99,
+    rating: 4.5,
+    reviewCount: 789,
+    category: "Clothing",
+    image: "/images/slim-fit-chino-pants.jpg",
+    badge: "sale",
+    description: "Stretch fabric with a tailored fit, perfect for work or weekend.",
+  },
+  {
+    id: 11,
+    name: "Mechanical Keyboard TKL",
+    price: 134.99,
+    rating: 4.9,
+    reviewCount: 1234,
+    category: "Electronics",
+    image: "/images/mechanical-keyboard-tkl.jpg",
+    badge: "new",
+    description: "Tactile switches with RGB backlighting and aluminum frame.",
+  },
+  {
+    id: 12,
+    name: "Canvas Hiking Backpack",
+    price: 79.99,
+    rating: 4.6,
+    reviewCount: 567,
+    category: "Sports",
+    image: "/images/canvas-hiking-backpack.jpg",
+    description: "40L capacity with ergonomic support and waterproof coating.",
+  },
+];
+
+export const categories = ["All", "Electronics", "Clothing", "Accessories", "Footwear", "Sports"];
